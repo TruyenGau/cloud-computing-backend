@@ -19,6 +19,10 @@ app.use('/routes', express.static(path.join(__dirname, 'routes')));
 configViewEngine(app);
 
 //khai báo route
+app.get('/', (req, res) => {
+    res.send('Welcome to the backend API!');
+});
+
 app.use('/v1/api/', apiRoutes);
 
 
