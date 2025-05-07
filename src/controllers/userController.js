@@ -55,7 +55,6 @@ const createProductAPI = async (req, res) => {
             stock,
             category,
             image, // Lưu đường dẫn đến ảnh
-
         });
 
         await newProduct.save();
